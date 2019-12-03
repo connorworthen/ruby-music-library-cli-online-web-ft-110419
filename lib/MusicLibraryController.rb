@@ -34,11 +34,13 @@ class MusicLibraryController
       when "list genre"
         list_songs_by_genre
       when "play song"
-        play_song
-      end
-
-    end
+    self.play_song
+  when "exit"
+    'exit'
+  else
+    call
   end
+end
 
   def list_songs
     listed_songs = Song.all.collect.sort_by{|song| song.name}
