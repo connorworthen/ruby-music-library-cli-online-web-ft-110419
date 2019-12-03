@@ -98,6 +98,7 @@ class MusicLibraryController
       songs_sorted_by_name = song.songs.sort_by do |song|
       song.name
     end
+  end
 
     songs_sorted_by_name.each_with_index(1) do |song, index|
       puts "Playing #{song.name} by #{song.artist.name}"
