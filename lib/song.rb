@@ -18,7 +18,7 @@ attr_accessor :name, :artist, :genre
 
   def genre=(genre)
     @genre = genre
-    if genre.songs.none?(genre)
+    if genre.songs.none?(self)
     genre.songs << self
     end
   end
