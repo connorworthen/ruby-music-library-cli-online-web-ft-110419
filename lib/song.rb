@@ -11,9 +11,10 @@ attr_accessor :name, :artist, :genre
     @genre = genre
   end
 
-  def initialize=(artist)
+  def artist=(artist)
     @artist = artist
     artist.add_song(self)
+    @artist << self
   end
 
   def save
