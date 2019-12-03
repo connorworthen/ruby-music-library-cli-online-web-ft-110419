@@ -16,6 +16,13 @@ attr_accessor :name, :artist, :genre
     artist.add_song(self)
   end
 
+  def genre=(genre)
+    @genre = genre
+    if genre.songs.include?(genre)
+      genre.songs << self
+    end
+  end
+
   def save
     @@all << self
   end
