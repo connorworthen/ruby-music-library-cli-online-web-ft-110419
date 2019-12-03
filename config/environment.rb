@@ -3,7 +3,7 @@ Bundler.require
 
 module Concerns
   module Findable
-    _
+    
   end
 end
 
