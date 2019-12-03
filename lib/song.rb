@@ -5,10 +5,10 @@ attr_accessor :name, :artist, :genre
 
 @@all = []
 
-  def initialize(name, artist = @artist, genre = nil)
+  def initialize(name, artist = nil, genre = nil)
     @name = name
-    @artist = artist
-    @genre = genre
+    self.artist = artist if artist
+    self.genre = genre if genre
   end
 
   def artist=(artist)
