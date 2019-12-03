@@ -24,7 +24,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.find_by_name
-
+    Song.all.find{|song| song.name == name}
   end
 
   def self.find_or_create_by_name
