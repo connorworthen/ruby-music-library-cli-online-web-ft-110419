@@ -1,4 +1,5 @@
 require 'pry'
+
 class MusicImporter
 
   def initialize(path)
@@ -9,8 +10,8 @@ class MusicImporter
     @path
   end
 
-  def files()
-    @files ||= Dir.glob("#{@path}/*.mp3").collect{ |file| file.gsub("#{@path}/", "") }
+  def files
+    Dir.entries(@path).sort[2..6]
   end
 
   def import()
