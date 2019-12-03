@@ -34,13 +34,11 @@ class MusicLibraryController
       when "list genre"
         list_songs_by_genre
       when "play song"
-    self.play_song
-  when "exit"
-    'exit'
-  else
-    call
+        play_song
+      end
+    end
   end
-end
+
 
   def list_songs
     listed_songs = Song.all.collect.sort_by{|song| song.name}
@@ -102,6 +100,6 @@ end
       chosen_input = name_extractor(chosen_input)[1]
       song = Song.find_by_name(chosen_input)
       puts "Playing #{song.name} by #{song.artist.name}" unless song == nil
-   end
- end
+    end
+  end
 end
