@@ -1,24 +1,22 @@
 require 'bundler'
 Bundler.require
 
-Concerns::Findable
+module Concerns
+  module Findable
 
 
-  def find_by_name(name)
-    all.find do |object|
-        object.name == name
-      end
-    end
+  def find_by_name
+
   end
 
 
 
 
-  def find_or_create_by_name(name)
-    find_by_name(name) || self.create(name)
+  def find_or_create_by_name
+    
   end
 
-
+  end
 end
 
 require_all 'lib'
