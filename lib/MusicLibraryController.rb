@@ -18,5 +18,5 @@ class MusicLibraryController
     "To quit, type 'exit'."
     "What would you like to do?"
   end
-  
+
 end
