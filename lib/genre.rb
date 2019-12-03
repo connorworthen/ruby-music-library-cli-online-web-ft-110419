@@ -17,7 +17,7 @@ attr_accessor :name
     @@all
   end
 
-  def self.destory_all
+  def self.destroy_all
     @@all.clear
   end
 
