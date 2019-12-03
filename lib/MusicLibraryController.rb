@@ -104,6 +104,7 @@ class MusicLibraryController
        end
      end
    end
+ end
 end
  #puts "Which song number would you like to play?"
     #list_of_songs =  Song.all.sort{ |a, b| a.name <=> b.name }
