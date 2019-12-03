@@ -2,7 +2,7 @@ require 'bundler'
 Bundler.require
 
 module
-  Concerns::Findable
+Concerns::Findable
 
 
   def find_by_name(name)
