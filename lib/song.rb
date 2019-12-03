@@ -23,6 +23,12 @@ attr_accessor :name, :artist, :genre
     end
   end
 
+  def self.find_by_name
+
+  end
+
+  def
+
   def save
     @@all << self
   end
