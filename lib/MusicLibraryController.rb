@@ -27,11 +27,11 @@ class MusicLibraryController
   end
 
   def list_songs
-    sorted_songs = Song.all.sort_by do |songs|
-      songs.name
+    songs_sorted_by_song = Song.all.sort_by do |song|
+      song.name
     end
-    sorted_songs.each.with_index(1) do |songs,index|
-      puts "#{index}. #{songs.name}"
+    songs_sorted_by_song.each.with_index(1) do |song,index|
+      puts "#{index}. #{song.name}"
     end
   end
 
