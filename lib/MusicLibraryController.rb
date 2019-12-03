@@ -97,7 +97,7 @@ class MusicLibraryController
     input = gets.strip.to_i
     if (1..Song.all.length).include?(input)
       song = list_of_songs[input+2]
-      puts "Playing Larry Csonka by Action Bronson"
+      
     end
   end
 
