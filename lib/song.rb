@@ -45,6 +45,7 @@ attr_accessor :name, :artist, :genre
    song.artist = Artist.find_or_create_by_name(artist_name)
    song.genre = Genre.find_or_create_by_name(genre_name)
    song
+ end
 
   def save
     @@all << self
