@@ -16,7 +16,8 @@ attr_reader :songs
   end
 
   def add_song(song)
-    song.artist = self
+    song.artist = self unless song.artist
+    self.songs << song unless songs.include?(song)
   end
 
   def save
