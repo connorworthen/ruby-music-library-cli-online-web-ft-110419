@@ -4,9 +4,9 @@ class Artist
 attr_accessor :name
 attr_reader :songs
 
-  @@all = []
+@@all = []
 
-  def intialize(name)
+  def initialize(name)
     @name = name
     @songs = []
   end
