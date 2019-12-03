@@ -34,3 +34,5 @@ class MusicLibraryController
       puts "#{index}. #{artist.name}"
     end
   end
+
+end
