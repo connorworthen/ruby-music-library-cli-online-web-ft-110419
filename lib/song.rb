@@ -14,7 +14,6 @@ attr_accessor :name, :artist, :genre
   def artist=(artist)
     @artist = artist
     artist.add_song(self)
-    @artist << self
   end
 
   def save
