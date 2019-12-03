@@ -20,6 +20,13 @@ attr_reader :songs
     self.songs << song unless songs.include?(song)
   end
 
+  def genres
+   genres = @songs.collect do |song|
+     song.genre
+   end
+   genres.uniq
+ end
+
   def save
     @@all << self
   end
